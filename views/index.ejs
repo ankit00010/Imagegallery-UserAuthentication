@@ -1,0 +1,17 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Upload and Editing</title>
+</head>
+<body>
+  <h1>Image Upload and Editing</h1>
+  <form action="/upload/images" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*"  multiple required>
+    <button type="submit">Upload Image</button>
+  </form>
+  <p>View uploaded images <a href="/upload/gallery">here</a>.</p>
+</body>
+</html>
